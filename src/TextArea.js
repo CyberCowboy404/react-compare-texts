@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 export function TextArea({ text, showTextLength, setText }) {
     const textCounter = showTextLength ? <span>{text.length}</span> : ""
     return (
