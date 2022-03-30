@@ -9,9 +9,9 @@ function App() {
 
   return (
     <div className="App">
-        <TextArea text={firstText} showTextLength={true} setText={setFirstText} />
-        <TextArea text={lastText} showTextLength={true} setText={setLastText} />
-        {firstText === lastText ? "Texts are Equal" : "Text are not Equal"}
+      <TextArea text={firstText} showTextLength={true} setText={setFirstText} />
+      <TextArea text={lastText} showTextLength={true} setText={setLastText} />
+      {firstText === lastText ? "Texts are Equal" : "Text are not Equal"}
     </div>
   );
 }
