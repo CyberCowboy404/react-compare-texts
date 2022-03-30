@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <TextArea text={firstText} showTextLength={true} setText={setFirstText} />
       <TextArea text={lastText} showTextLength={true} setText={setLastText} />
-      {firstText === lastText ? "Texts are Equal" : "Text are not Equal"}
+      {firstText === lastText ? "Texts are Equal" : "Texts are not Equal"}
     </div>
   );
 }
