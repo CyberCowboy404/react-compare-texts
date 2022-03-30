@@ -1,23 +1,17 @@
+import { useState } from 'react';
+import { TextArea } from './TextArea';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const [firstText, setFirstText] = useState("Default Text 1");
+  const [lastText, setLastText] = useState("Default Text 1");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <TextArea text={firstText} showTextLength={true} setText={setFirstText} />
+        <TextArea text={lastText} showTextLength={true} setText={setLastText} />
+        {firstText === lastText ? "Texts are Equal" : "Text are not Equal"}
     </div>
   );
 }
